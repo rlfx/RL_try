@@ -116,6 +116,7 @@ class Qlearn(object):
                 self.position = 0
                 self.exit_price = close_t
                 instant_pnl = self.exit_price - self.entry_price
+                self.entry_price = 0
         return instant_pnl
     
     def get_1day_operation_PnL(self,action_t,close_t,close_t1):
